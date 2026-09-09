@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Реєстрація на навчальний курс</title>
+</head>
+<body>
+    <h1 class="text-center">Реєстрація на навчальний курс</h1>
+    <form class="text-center">
+        <div>
+            <label for="name">Ім'я та прізвище:</label>
+            <input type="text" size="24" id="name" placeholder="Введіть ваше ім'я та прізвище" required>
+        </div>
+        <div>
+            <label for="post">Електронна пошта:</label>
+            <input type="email" id="post" name="email" required>
+        </div>
+        <div>
+            <label for="phone">Номер телефону:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div>
+            <label for="age">Вік:</label>
+            <input type="number" id="age" name="age" min="14" max="70">
+        </div>
+        <div>
+            <label for="birthdate">Дата народження  :</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+        <div>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" minlength="8" required>
+        </div>
+        <div>
+            <label for="confirm-password">Повторити пароль:</label>
+            <input type="password" id="confirm-password" name="confirm_password" minlength="8" required>
+        </div>
+
+        <div>
+            <p>Рівень підготовки:</p>
+            <input type="radio" id="start" name="level" value="beginner" checked>
+            <label for="start">Початковий</label>
+        
+            <input type="radio" id="mid" name="level" value="middle">
+            <label for="mid">Середній</label>
+        
+            <input type="radio" id="high" name="level" value="high">
+            <label for="high">Високий</label>
+        </div>
+        
+        <div>
+            <p>Цікаві теми:</p>
+            <input type="checkbox" id="html" name="topics" value="html">
+            <label for="html">HTML</label>
+        
+            <input type="checkbox" id="css" name="topics" value="css">
+            <label for="css">CSS</label>
+        
+            <input type="checkbox" id="js" name="topics" value="js">
+            <label for="js">JavaScript</label>
+        
+            <input type="checkbox" id="angular" name="topics" value="angular">
+            <label for="angular">Angular</label>
+        </div>
+
+        <div>
+            <label for="format">Бажаний формат навчання:</label>
+            <select id="format" name="format">
+                <option value="online">Онлайн</option>
+                <option value="offline">Очно</option>
+                <option value="mixed">Змішаний формат</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="reason">Чому ви хочете пройти цей курс?</label><br>
+            <textarea id="reason" name="reason" rows="4" cols="35" maxlength="300" placeholder="Напишіть декілька слів..."></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Відправити</button>
+            <button type="reset">Очистити</button>
+        </div>
+        
+       
+        
+    </form>
+</body>
+</html>
