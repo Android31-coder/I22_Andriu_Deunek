@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 20px;
+    z-index: 100;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: blue;
+}
+
+.static-box {
+    position: static;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+}
+
+.third-box {
+    top: 50px;
+}
+
+/* Для position: static властивість top не переміщує елемент */
+
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 20px;
+    background-color: #e6f2ff;
+}
+
+.product {
+    position: relative;
+    width: 300px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.price {
+    font-weight: bold;
+    color: green;
+}
+
+.banner {
+    position: relative;
+    width: 500px;
+    margin: 20px;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+.banner-button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 20px;
+}
+
+.help {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.layers {
+    position: relative;
+    height: 250px;
+    border: 1px dashed gray;
+}
+
+.box1 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 150px;
+    height: 100px;
+    background-color: rgba(255, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.box2 {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    width: 150px;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.7);
+    z-index: 2;
+}
